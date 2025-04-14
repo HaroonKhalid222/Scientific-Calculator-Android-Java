@@ -1,7 +1,7 @@
 # Scientific Calculator for Android 📱🧮
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Android CI](https://github.com/yourusername/android-scientific-calculator/workflows/Android%20CI/badge.svg)
+![Android CI](https://github.com/HaroonKhalid222//workflows/Android%20CI/badge.svg)
 
 A dual-mode scientific calculator application for Android with basic and advanced mathematical operations, supporting both portrait and landscape orientations.
 
