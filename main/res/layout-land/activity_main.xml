@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <!-- Input Display -->
+
+    <!-- Result Display -->
+
+    <!-- Calculator Grid -->
+
+    <TextView
+        android:id="@+id/inputText"
+        style="@style/LandscapeInputText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        style="@style/LandscapeResultText"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/inputText"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="730dp"
+        android:layout_height="271dp"
+        android:layout_margin="1dp"
+        app:columnCount="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
+        app:layout_constraintVertical_bias="0.666"
+        app:rowCount="6">
+
+        <!-- Row 0 -->
+        <Button
+            android:id="@+id/secondaryFuncToggle"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/pow"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x^y"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/sqrt"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="√"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/log"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ln"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ln"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/factorial"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n!"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/C"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            app:layout_column="6"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/backspace"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⌫"
+            app:layout_column="7"
+            app:layout_row="0" />
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/sin"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sin"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/cos"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cos"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/tan"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tan "
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/e"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/pi"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="π"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/openParen"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/closeParen"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/LandscapeButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            app:layout_column="7"
+            app:layout_row="1" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/sec"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/csc"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="csc"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/cot"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cot"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/percent"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            app:layout_column="6"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/LandscapeButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            app:layout_column="7"
+            app:layout_row="2" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/sinh"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="sinh"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/cosh"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="cosh"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/tanh"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="tanh"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/plusMinus"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="+/-"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="4"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="5"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="6"
+            app:layout_column="6"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/LandscapeButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="-"
+            app:layout_column="7"
+            app:layout_row="3" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/degRadToggle"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="DEG"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/memoryClear"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="MC"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/memoryRecall"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="MR"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:text="."
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="1"
+            app:layout_column="4"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="2"
+            app:layout_column="5"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="3"
+            app:layout_column="6"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/sum"
+            style="@style/LandscapeButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="+"
+            app:layout_column="7"
+            app:layout_row="4" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/memoryAdd"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="M+"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/memorySubtract"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="M-"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/memoryStore"
+            style="@style/LandscapeButtonLightGray"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="MS"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/LandscapeButtonDarkGray"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
+            android:text="0"
+            app:layout_column="3"
+            app:layout_columnSpan="2"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/LandscapeButtonOrange"
+            android:layout_width="267dp"
+            android:layout_height="29dp"
+            android:text="="
+            app:layout_column="5"
+            app:layout_columnSpan="3"
+            app:layout_row="5" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
