@@ -55,4 +55,5 @@ A dual-mode scientific calculator application for Android with basic and advance
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/android-scientific-calculator.git
+   git clone https://github.com/HaroonKhalid222/Scientific-Calculator-Android-Java.git
+   
