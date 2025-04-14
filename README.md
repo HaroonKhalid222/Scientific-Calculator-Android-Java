@@ -5,7 +5,7 @@
 
 A dual-mode scientific calculator application for Android with basic and advanced mathematical operations, supporting both portrait and landscape orientations.
 
-<img src="screenshots/landscape.png" width="400" alt="Landscape Mode"> <img src="screenshots/portrait.png" width="200" alt="Portrait Mode">
+<img src="screenshots/landscape.PNG" width="400" alt="Landscape Mode"> <img src="screenshots/portrait.PNG" width="200" alt="Portrait Mode">
 
 ## Table of Contents
 - [Features](#features-)
